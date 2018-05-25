@@ -1,0 +1,185 @@
+/* VARIABLES */
+:root{
+    --menu-bg-color: #181A12;
+}
+
+
+/* ------- Menus - commun --------*/
+.menu {
+    background: var(--menu-bg-color);
+}
+.menu a {
+    color: #FF6533;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: .9em;
+    /* PHASE 0.7 */
+    border: 0.1em solid var(--menu-bg-color);
+    padding: 0.25em 0.5em;
+}
+
+.menu a:hover, .menu a:focus {
+    /* ------- PHASE 0.7 --------*/
+    background-color: #282828;
+}
+
+.menu a:hover{
+    border-color: #888888;
+    border-radius: 0.25em 0.75em 0.25em 0.75em;
+}
+
+.menu a:focus {
+    /* -------- PHASE 0.7 ------- */
+    border-radius: 0.5em;
+    border-right-color: #CCCCCC;
+    border-bottom-color: #CCCCCC;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    outline:none;
+
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+}
+
+/* ------- Menu vertical - #sous-menu ------- */
+#sous-menu {
+    width: 18%;
+    float: left;
+}
+#sous-menu a {
+    display: block;
+    height: 2%;
+}
+#sous-menu ul {
+    padding: 20px 10px;
+}
+
+/* ------- Menu horizontal - #menu -------- */
+#menu a {
+    height:2.5%;
+    display: inline;
+}
+#menu ul {
+    padding: 10px;
+}
+#menu ul li {
+    display: inline;
+}
+#menu ul, #menu li{
+    display: inline-block;
+}
+/* ----------- sous-menu --------- */
+#sMenu {
+    border: darkorange 0.05em;
+    border-radius: .5em;
+    margin-bottom: 5px;
+}
+
+#sMenu a {
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.5) .25em .25em .5em;
+}
+
+/* ----------- ERROR -----------*/
+
+#gestion {
+    clear: both;
+}
+
+#gestion aside {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    border: 0.1em solid darkgray;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    background-color: rgba(255,255,255,0.33);
+}
+
+#gestion aside:before {
+    position: relative;
+    top: -1em;
+    color: yellow;
+    background-color: darkgrey;
+    padding: 0.2em 1em;
+    border: 0.1em solid grey;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em rgba(128, 0, 0, 0.5);
+}
+
+#gestion aside#error:before {
+    content: 'error';
+    background-color: darkred;
+    border-color: red;
+}
+
+#gestion aside#message:before {
+    content: 'message';
+    background-color: darkgreen;
+    border-color: green;
+}
+
+#gestion aside#debug:before {
+    content: 'debug';
+    background-color: firebrick;
+    border-color: orange;
+}
+
+#gestion aside#jsonError:before {
+    content: 'jsonError';
+    background-color: rebeccapurple;
+    border-color: purple;
+}
+
+#gestion aside#kint:before {
+    content: 'kint';
+    background-color: darkblue;
+    border-color: blue;
+}
+
+/* ------- TABLES ------- */
+
+.myTab {
+    border-collapse: collapse;
+    color: black;
+}
+
+.myTab thead tr{
+    color: white;
+    background-color: darkgreen;
+}
+
+.myTab td, th{
+    border: 1px solid darkgray;
+    padding: 0.33em;
+}
+
+.myTab tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.myTab tbody tr:nth-child(even) {
+    background-color: lightgreen;
+}
+
+.myTab tbody tr:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.myTab th, tr > td:first-of-type{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+
+/* ----------- FOOTER ------------ */
+#credits {
+    display: block;
+}

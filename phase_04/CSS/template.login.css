@@ -1,0 +1,17 @@
+#formLogin label {
+    display: inline-block;
+    width: 8em;
+    text-align: right;
+}
+
+#formLogin #logMdPP {
+    font-style: italic;
+    text-decoration: none;
+    color: darkorange;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+#formLogin #logMdPP:hover {
+    color: blue;
+}
