@@ -57,6 +57,7 @@ class Db
             case 'mc_group':
             case 'mc_coursesGroup':
                 $argCount = 1;
+                break;
             // 0 param
             case 'mc_allGroups':
                 $argCount = 0;
@@ -68,7 +69,7 @@ class Db
         // Et puis seulement on fait la requête
         //if (!$this->pdoException) {
             try {
-                $appel = 'call ' . $name . '('. implode(',', array_fill(0, $argCount, '?')); .')';
+                $appel = 'call ' . $name . '('. implode(',', array_fill(0, $argCount, '?')) .')';
                 echo $appel;
                 $sth = $this->iPdo->prepare($appel);
                 $sth->execute($param);
