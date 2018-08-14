@@ -1,0 +1,182 @@
+/* VARIABLES */
+:root{
+    --menu-bg-color: #181A12;
+}
+
+/* Menus - commun */
+.menu {
+    background: var(--menu-bg-color);
+}
+
+.menu a {
+    color: #FF6533;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: .9em;
+    border: 0.1em solid var(--menu-bg-color);
+    padding: 0.25em 0.5em !important;
+}
+
+.menu a:hover, .menu a.selected  {
+    background-color: #282828;
+}
+
+.menu a:hover{
+    border-color: #888888;
+    border-radius: 0.25em 0.75em 0.25em 0.75em;
+    outline:none;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    color: orange;
+}
+
+.menu a.selected {
+    border-radius: 0.5em;
+    border-top-color: transparent;
+    border-right-color: #CCCCCC;
+    border-left-color: transparent;
+    border-bottom-color: #CCCCCC;
+}
+
+/* Menu vertical - #sous-menu */
+#sous-menu {
+    width: 18%;
+    float: left;
+    /*clear: both;*/
+}
+#sous-menu a {
+    display: block;
+    height: 2%;
+}
+#sous-menu ul {
+    padding: 20px 10px;
+}
+
+/* Menu horizontal - #menu */
+#menu a {
+    line-height:2.5;
+    display: inline;
+}
+#menu ul {
+    padding: 10px;
+}
+#menu ul, #menu li {
+    display: inline;
+}
+
+.sMenu {
+    border: 0.05em solid darkorange;
+    border-radius: 0.5em;
+}
+
+.sMenu a {
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.5) .25em .25em .5em;
+}
+
+/* FOOTER */
+#credits {
+    display: block;
+}
+
+/* Phase 2 */
+section#gestion {
+    clear:both;
+}
+
+section#gestion aside {
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.1em solid darkgray;
+    border-radius: 0.5em;
+    background-color: rgba(255,255,255,0.33);
+    padding: 0.5em;
+}
+
+section#gestion aside:before {
+    top:-1em;
+    position:relative;
+    color: yellow;
+    padding: 0.2em 1em;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(128,0,0,0.5);
+}
+#gestion aside#error:before{
+    content:'error';
+    background-color: darkred;
+    border: 0.1em solid red;
+}
+
+#gestion aside#message:before{
+    content:'message';
+    background-color: darkgreen;
+    border: 0.1em solid green;
+}
+
+#gestion aside#debug:before{
+    content:'debug';
+    background-color: firebrick;
+    border: 0.1em solid orange;
+}
+
+#gestion aside#jsonError:before{
+    content:'jsonError';
+    background-color: rebeccapurple;
+    border: 0.1em solid purple;
+}
+
+#gestion aside#kint:before {
+    content:'kint';
+    background-color: darkblue;
+    border: 0.1em solid blue;
+}
+
+/* Tables */
+.myTab {
+    border-collapse: collapse;
+    color: black;
+}
+
+.myTab thead tr{
+    color: white;
+    background-color: darkgreen;
+}
+
+.myTab td, th{
+    border: 1px solid darkgray;
+    padding: 0.33em;
+}
+
+.myTab tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.myTab tbody tr:nth-child(even) {
+    background-color: lightgreen;
+}
+
+.myTab tbody tr:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.myTab th, tr > td:first-of-type{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+/*  jQuery UI override  */
+.ui-widget.ui-widget-content, .ui-widget-content{
+    border:none;
+}
